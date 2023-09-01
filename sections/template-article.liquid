@@ -37,7 +37,7 @@
           {% if article.image != blank %}
             <img
               class="w-full h-80 md:h-96 object-cover object-center"
-              src="{{ article.image | image_url: width: 1920, height: 1280 }}"
+              src="{{ article.image | img_url: "large" }}"
               loading="lazy"
               alt="{{ article.image.alt }}"
               width="max"
